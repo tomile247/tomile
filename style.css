@@ -1,7 +1,16 @@
+:root {
+    /*BREAKPOINTS*/
+    --breakpoint-small: 576px;
+    --breakpoint-medium: 768px;
+    --breakpoint-large: 992px;
+    --breakpoint-extra-large: 1200px;
+}
+
 header {
+    font-family: 'Caveat', cursive;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 section {
@@ -15,4 +24,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (min-width: 576px) {
+    
+    header {
+        justify-content: flex-start;
+    }
 }
