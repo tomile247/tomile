@@ -4,6 +4,7 @@
   "description": "Personal web site",
   "main": "index.js",
   "scripts": {
+    "start": "parcel serve src/index.html --public-url / --dist-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,20 @@
   "bugs": {
     "url": "https://github.com/tomile247/tomile/issues"
   },
-  "homepage": "https://github.com/tomile247/tomile#readme"
+  "homepage": "https://github.com/tomile247/tomile#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "autoprefixer": "^10.4.15",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "parcel": "^2.9.3",
+    "postcss-loader": "^7.3.3",
+    "sass": "^1.66.1",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3"
+  }
 }
